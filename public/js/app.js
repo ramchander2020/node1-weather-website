@@ -39,10 +39,10 @@ weatherform.addEventListener ('submit', (e)=>{
             // const feelslike = JSON.parse(data.feelslike);
            // const weather_descriptions = data.weather_descriptions[0];
            messageOne.textContent = ''
-            messageTwo.textContent = location
-            messageThree.textContent = data.forecastdata.feelslike
-            messageFour.textContent = data.forecastdata.temperature
-            messageFive.textContent = data.forecastdata.weather_descriptions[0]
+            messageTwo.textContent = 'Location : '+ location
+            messageThree.textContent = 'It Feels like : '+ data.forecastdata.feelslike
+            messageFour.textContent = 'Temperature  : '+ data.forecastdata.temperature
+            messageFive.textContent = 'Weather Description  : ' + data.forecastdata.weather_descriptions[0]
             
            
         }
